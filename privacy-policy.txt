@@ -1,0 +1,165 @@
+================================================================
+  vMessage - PRIVACY POLICY
+  Last updated: March 2026
+================================================================
+
+
+1. OVERVIEW
+----------------------------------------------------------------
+vMessage is designed with privacy as a core principle. This
+policy explains what data is and is not collected when you use
+the Service.
+
+Short version: we collect almost nothing, and what little
+passes through third-party infrastructure is outside our
+control and is not stored by us.
+
+
+2. DATA WE DO NOT COLLECT
+----------------------------------------------------------------
+vMessage does NOT:
+
+  - Operate a server that receives, stores, or logs messages
+  - Collect your IP address
+  - Track your location
+  - Use cookies for tracking
+  - Use analytics services (no Google Analytics, no Mixpanel,
+    no tracking pixels)
+  - Create or maintain user accounts
+  - Store any personally identifiable information
+
+
+3. DATA STORED LOCALLY IN YOUR BROWSER
+----------------------------------------------------------------
+vMessage stores the following data in your browser's
+localStorage only. This data never leaves your device.
+
+  a) YOUR DISPLAY NAME
+     Key: "vmessage-username"
+     What: The display name you entered in the app.
+     Why: So your name persists between visits.
+     Cleared by: You, at any time, by clearing site data in
+     your browser settings.
+     Legacy compatibility note: older LAN Rooms builds may
+     also leave "lan-rooms-username" in localStorage.
+
+  b) TERMS ACCEPTANCE
+     Key: "vmessage-tos-v1"
+     What: A flag ("agreed") indicating you accepted the
+     Terms of Service.
+     Why: So the terms popup does not reappear on repeat
+     visits.
+     Cleared by: You, at any time, by clearing site data.
+     Legacy compatibility note: older LAN Rooms builds may
+     also leave "lan-rooms-tos-v1" in localStorage.
+
+No other data is written to localStorage, sessionStorage,
+IndexedDB, or cookies by this application.
+
+
+4. DATA THAT PASSES THROUGH THIRD-PARTY INFRASTRUCTURE
+----------------------------------------------------------------
+When you use vMessage, a connection must be established
+between your browser and other peers. This process involves:
+
+  a) PEERJS SIGNALING SERVER
+     During the initial handshake, your browser contacts
+     PeerJS's public signaling server (0.peerjs.com or
+     similar). This server facilitates the WebRTC connection
+     and may transiently process your IP address and a
+     randomly generated peer ID. PeerJS's own privacy policy
+     governs this interaction. After the connection is
+     established, the signaling server is no longer involved
+     in any communication.
+
+  b) STUN SERVERS
+     WebRTC uses STUN servers to determine your public IP
+     for NAT traversal. vMessage uses the default PeerJS
+     STUN configuration. STUN servers see your IP address
+     transiently during connection setup only.
+
+  c) CDN-LOADED RESOURCES
+     The application loads the following resources from CDNs
+     at runtime:
+
+       - PeerJS library from unpkg.com
+       - Lucide icons from cdn.jsdelivr.net
+       - Fonts from fonts.googleapis.com / fonts.gstatic.com
+
+     These CDN providers may log standard HTTP request data
+     (IP address, timestamp, user-agent) per their own
+     policies. We have no access to this data.
+
+We do not control and are not responsible for the data
+practices of any of these third parties.
+
+
+5. MESSAGE CONTENT
+----------------------------------------------------------------
+Messages are transmitted peer-to-peer via WebRTC data
+channels. They do not pass through any server operated by
+this project.
+
+  - Public rooms: messages are transmitted over the
+    encrypted WebRTC channel but are not additionally
+    encrypted at the application layer.
+
+  - Password-protected rooms: messages are encrypted with
+    AES-256-GCM before transmission. Only peers who have
+    derived the correct key from the room password can
+    decrypt them.
+
+In either case, messages are NOT stored anywhere after the
+session ends. When a user disconnects, their messages are
+gone. There is no message history, no logs, no backups.
+
+
+6. EPHEMERAL CRYPTOGRAPHIC KEYS
+----------------------------------------------------------------
+On each page load, vMessage generates a fresh ECDSA P-256
+keypair in your browser using the Web Crypto API. The private
+key is marked non-extractable and exists only in memory for
+the duration of your session. It is discarded when you close
+or refresh the tab. It is never transmitted to anyone.
+
+
+7. CHILDREN'S PRIVACY
+----------------------------------------------------------------
+vMessage is not directed at children under the age of 13
+(or the applicable age in your jurisdiction). We do not
+knowingly collect any information from minors. If you are
+under the applicable age limit, please do not use this
+Service.
+
+
+8. YOUR RIGHTS & CONTROLS
+----------------------------------------------------------------
+Since we do not collect personal data on any server, there is
+nothing for us to delete, export, or modify on your behalf.
+
+Data stored in your browser (display name, ToS acceptance)
+can be deleted at any time by:
+
+  - Clearing site data in your browser settings
+  - Opening browser DevTools → Application → Local Storage
+    and deleting the relevant keys manually
+
+
+9. CHANGES TO THIS POLICY
+----------------------------------------------------------------
+This Privacy Policy may be updated from time to time. The
+"Last updated" date at the top of this document will reflect
+any changes. Continued use of the Service after updates
+constitutes acceptance of the revised policy.
+
+
+10. CONTACT
+----------------------------------------------------------------
+vMessage is an open-source project. If you have questions,
+concerns, or want to report a privacy issue, please open an
+issue on the project's GitHub repository.
+
+
+================================================================
+  END OF PRIVACY POLICY
+================================================================

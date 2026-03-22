@@ -1,0 +1,162 @@
+================================================================
+  vMessage - TERMS OF SERVICE
+  Last updated: March 2026
+================================================================
+
+
+1. ACCEPTANCE OF TERMS
+----------------------------------------------------------------
+By accessing or using vMessage ("the Service"), you agree to
+be bound by these Terms of Service. If you do not agree, do
+not use the Service.
+
+vMessage is an experimental, open-source, peer-to-peer chat
+tool. It is provided as-is for personal and educational use.
+Use of this Service is entirely at your own risk.
+
+
+2. WHAT THE SERVICE IS
+----------------------------------------------------------------
+vMessage is a browser-based, peer-to-peer chat application.
+There is no central server that processes, stores, or relays
+your messages. All communication happens directly between
+users' browsers via WebRTC data channels.
+
+The Service relies on the PeerJS public signaling server
+(peerjs.com) solely to establish initial connections between
+peers. After a connection is established, the signaling server
+is no longer involved.
+
+
+3. WHAT THE SERVICE IS NOT
+----------------------------------------------------------------
+vMessage is NOT:
+
+  - A registered or commercial messaging platform
+  - A secure communication tool for sensitive or confidential
+    matters
+  - A moderated or monitored environment
+  - Affiliated with any company, organization, or institution
+  - Guaranteed to be available, reliable, or error-free
+
+
+4. ACCEPTABLE USE
+----------------------------------------------------------------
+You agree not to use vMessage to:
+
+  - Harass, threaten, or harm other users
+  - Impersonate any person or entity
+  - Distribute illegal content of any kind
+  - Attempt to exploit, attack, or disrupt the Service or
+    other users' connections
+  - Use automated bots or scripts to flood the network
+  - Conduct any activity that violates applicable local,
+    national, or international law
+
+Violation of these terms may result in your peer ID being
+blocked from the network.
+
+
+5. IDENTITY & IMPERSONATION
+----------------------------------------------------------------
+vMessage does not have user accounts, login systems, or any
+form of verified identity. Any user can set any display name.
+
+You acknowledge that:
+
+  - Display names are unverified and can be chosen freely
+  - You cannot confirm the real-world identity of any other
+    user solely based on their display name
+  - Cryptographic thumbprints (#XXXX) only confirm that a
+    given key was used within a single session — they do not
+    verify real-world identity across sessions or devices
+  - You use this Service with the understanding that anyone
+    could be misrepresenting themselves
+
+Never share passwords, financial information, personal
+identifying information, or anything sensitive with users you
+have not verified through a separate, trusted channel.
+
+
+6. ENCRYPTION DISCLAIMER
+----------------------------------------------------------------
+Password-protected rooms use AES-256-GCM encryption with
+PBKDF2 key derivation (100,000 iterations). Message payloads
+are signed with ECDSA P-256 keys.
+
+However:
+
+  - Encryption is only as strong as the password you choose
+  - The Service relies on the browser's Web Crypto API, which
+    is outside the control of this project
+  - No security system is perfect or guaranteed
+  - This tool has not undergone a formal third-party security
+    audit
+
+Do not rely on vMessage as your sole security measure for
+sensitive communications.
+
+
+7. NO WARRANTIES
+----------------------------------------------------------------
+THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+The developer makes no guarantee that:
+
+  - The Service will be uninterrupted or error-free
+  - Messages will be delivered successfully
+  - The network will remain available at any given time
+  - Third-party dependencies (PeerJS, STUN servers) will
+    remain operational
+
+
+8. LIMITATION OF LIABILITY
+----------------------------------------------------------------
+To the maximum extent permitted by applicable law, the
+developer of vMessage shall not be liable for any indirect,
+incidental, special, consequential, or punitive damages
+arising from your use of or inability to use the Service,
+including but not limited to loss of data, unauthorized access
+to transmissions, or conduct of third parties on the Service.
+
+
+9. THIRD-PARTY SERVICES
+----------------------------------------------------------------
+vMessage uses the following third-party services:
+
+  - PeerJS (peerjs.com) — WebRTC signaling
+  - Lucide Icons (lucide.dev) — UI icons (MIT License)
+  - Google Fonts — Typography (Geist, DM Mono)
+
+These services have their own terms and privacy policies which
+govern their respective use. This project is not affiliated
+with or endorsed by any of them.
+
+
+10. MODIFICATIONS TO TERMS
+----------------------------------------------------------------
+These terms may be updated at any time. Continued use of the
+Service after changes are posted constitutes acceptance of the
+revised terms. It is your responsibility to check for updates.
+
+
+11. GOVERNING LAW
+----------------------------------------------------------------
+These Terms shall be governed by and construed in accordance
+with the laws of the jurisdiction in which the developer
+resides, without regard to conflict of law principles.
+
+
+12. CONTACT
+----------------------------------------------------------------
+vMessage is an open-source project. If you have questions or
+want to report a security issue, please open an issue on the
+project's GitHub repository.
+
+
+================================================================
+  END OF TERMS OF SERVICE
+================================================================
