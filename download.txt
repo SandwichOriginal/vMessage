@@ -1382,11 +1382,11 @@ startDirect().catch(console.error);
   btn.addEventListener("click", async function(e) {
     e.preventDefault();
     const urls = [
-      "https://raw.githubusercontent.com/SandwichOriginal/vMessage/refs/heads/main/download.html",
-      "https://raw.githack.com/SandwichOriginal/vMessage/main/download.html",
-      "https://sandwichoriginal.github.io/vMessage/download.html",
-      "https://cdn.jsdelivr.net/gh/SandwichOriginal/vMessage@main/download.html",
-      "https://cdn.statically.io/gh/SandwichOriginal/vMessage@main/download.html"
+      "https://raw.githubusercontent.com/SandwichOriginal/vMessage/refs/heads/main/download.txt",
+      "https://raw.githack.com/SandwichOriginal/vMessage/main/download.txt",
+      "https://sandwichoriginal.github.io/vMessage/download.txt",
+      "https://cdn.jsdelivr.net/gh/SandwichOriginal/vMessage@main/download.txt",
+      "https://cdn.statically.io/gh/SandwichOriginal/vMessage@main/download.txt"
     ];
     for (const url of urls) {
       try {
